@@ -10,6 +10,7 @@ public class Main {
     public static void main(String[] args) {
         // Initialize Api Context
         ApiContextInitializer.init();
+        System.out.println("How dis work");
 
         // Instantiate Telegram Bots API
         TelegramBotsApi botsApi = new TelegramBotsApi();
