@@ -29,7 +29,7 @@ Priority | As a ... | I want to ... | So that I can...
 ## 8. Appendix B : Use Cases
 <br>
 
-___For all use cases below, the **System** is `ezDo` and the **Actor** is the `user`, unless otherwise specfied.___
+___For all use cases below, the **System** is `Happenings@NUS` and the **Actor** is the `user`, unless otherwise specfied.___
 
 <br>
 
