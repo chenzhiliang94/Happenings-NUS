@@ -11,7 +11,10 @@ import urllib
 
 TOKEN = "398900728:AAEYokXaTW8RgArSG44VqLt_b4wqFu1sFTI"
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
-URL_2 = "https://www.google.com"
+
+url2 = "https://youtube.com"
+source_code = urllib.request.urlopen(url2).read().decode('utf')
+print(source_code.encode('cp437', 'replace'))
 
 def echo_all(updates):
     for update in updates["result"]:
@@ -41,11 +44,6 @@ def get_updates(offset=None):
     js = get_json_from_url(url)
     return js
 
-def get_updates_2():
-    url = URL_2
-    js = get_json_from_url(url)
-    return js
-
 def get_last_update_id(updates):
     update_ids = []
     for update in updates["result"]:
@@ -64,6 +62,7 @@ def get_last_chat_id_and_text(updates):
 def send_message(text, chat_id):
     text = urllib.parse.quote_plus(text)
     url = URL + "sendMessage?text={}&chat_id={}".format(text, chat_id)
+    
     get_url(url)
     
     
@@ -71,9 +70,11 @@ def send_message(text, chat_id):
 def main():
     last_update_id = None
     while True:
-        updates = get_updates_2()
-        print(updates)
-        break
+        updates = get_updates(last_update_id)
+        if len(updates["result"]) > 0:
+            last_update_id = get_last_update_id(updates) + 1
+            echo_all(updates)
+        time.sleep(0.5)
 
 
 if __name__ == '__main__':
