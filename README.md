@@ -45,7 +45,7 @@ ___For all use cases below, the **System** is `Happenings@NUS` and the **Actor**
 2. HappeningsBot gives a brief summary of the bot's functions and commands 
 3. HappeningsBot provides a url link for user to grant the bot access to his/her account 
 4. User enters his/her NUS email and password
-5. HappeningsBot asks if user is interested in what kinds of emails (Events, recruitment, internships)
+5. HappeningsBot asks for user's interest in specific categories of emails(Events, recruitment, internships)
 6. User chooses one or more types of emails choice
 7. Use case ends
 
@@ -53,10 +53,14 @@ ___For all use cases below, the **System** is `Happenings@NUS` and the **Actor**
 
 **Extensions**
 
-2a. The user enters an NUS email or password
+4a. The user enters an NUS email or password
 
-> 2a1. ezDo shows an error message and prompts the user to retry. <br>
-  2a2. Use case resumes at step 2.
+> 4a1. ezDo shows an error message and prompts the user to retry. <br>
+  4a2. Use case resumes at step 2.
+  
+6a. User chooses one or more types of emails choice
+
+> 6a1. User can change their setting with the command /settings
 
 <br>
 
