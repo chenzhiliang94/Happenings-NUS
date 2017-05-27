@@ -1,6 +1,6 @@
 # Happenings-NUS
 ## 1. About
-Tired of reading through countless NUS emails only to find out that a fraction of them are actually useful to you? Behold **Happenings@NUS**! **Happenings@NUS** is a telegram bot that filters your NUS email so that you will be notified of the contents of emails without ever opening them! In short, **Happenings@NUS** reads your NUS email and conducts some Natural Language Processing to divide emails into a few subcategories - 'Recruitments', 'Talks', 'Workshops', 'Internship Opportunities' and 'Others'. Subseqeuntly, **Happenings@NUS** will summarise these emails and send an one-liner summary to your telegram account!
+Tired of reading through countless NUS emails only to find out that a fraction of them are actually useful to you? Behold **Happenings@NUS**! **Happenings@NUS** is a telegram bot that filters your NUS email so that you will be notified of the contents of emails without ever opening them! In short, **Happenings@NUS** reads your NUS email and conducts some Natural Language Processing to divide emails into a few subcategories - 'Recruitments', 'Talks', 'Workshops', 'Internship Opportunities' and 'Others'. Subseqeuntly, **Happenings@NUS** will summarise these emails and push an one-liner notification to your telegram account!
 <br>
 More remarkably, you can instruct **Happenings@NUS** to only notify you of a certain type of emails. For example, if I am only interested in workshops and talks, I can set up the bot to only send me email summaries of emails containing workshops and talks! Amazing!
 
