@@ -42,11 +42,12 @@ ___For all use cases below, the **System** is `Happenings@NUS` and the **Actor**
 **MSS**
 
 1. User enters /start
-2. HappeningsBot responds with a url link for user to grant the bot access to their account 
-3. User enters his/her NUS email and password
-4. HappeningsBot asks if user is interested in what kinds of emails (Events, recruitment, internships)
-5. User chooses one or more types of emails choice
-6. Use case ends
+2. HappeningsBot gives a brief summary of the bot's functions and commands 
+3. HappeningsBot provides a url link for user to grant the bot access to his/her account 
+4. User enters his/her NUS email and password
+5. HappeningsBot asks if user is interested in what kinds of emails (Events, recruitment, internships)
+6. User chooses one or more types of emails choice
+7. Use case ends
 
 <br>
 
