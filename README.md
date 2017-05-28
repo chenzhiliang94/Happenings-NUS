@@ -77,12 +77,12 @@ ___For all use cases below, the **System** is `Happenings@NUS` and the **Actor**
 
 <br>
 
-### 3.4 Use Case 4: Hibernating/the bot
+### 3.4 Use Case 4: Hibernating/resume the bot
  
 1. User enters /hibernate to stop notifications from Happenings@NUS bot
+2. User enters /resume to resume functions of the bot
+3. Use case ends
 
-2. User wishes to pause/unpause the bot - /pause /resume
-3. User wishes to terminate the bot - /terminate
 
 
 
