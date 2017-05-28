@@ -52,19 +52,21 @@ ___For all use cases below, the **System** is `Happenings@NUS` and the **Actor**
 <br>
 
 **Extensions**
-
-4a. The user enters an NUS email or password
-
-> 4a1. ezDo shows an error message and prompts the user to retry. <br>
-  4a2. Use case resumes at step 2.
   
 6a. User chooses one or more types of emails choice
 
-> 6a1. User can change their setting with the command /settings
+> 6a1. User wishes to change category of notifications - use /changeCat
 
 <br>
 
-1. User wishes to change category of notifications - use /changeCat
+### 3.2 Use Case 2: Changing categories
+
+1. User has already initialised Happenings@NUS bot
+2. User enters /changeCat to change category of notified emails
+3. Use case ends
+
+<br>
+
 2. User wishes to pause/unpause the bot - /pause /resume
 3. User wishes to terminate the bot - /terminate
 4. User enters invalid commands - bot prompt with list of available commands
