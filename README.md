@@ -65,10 +65,9 @@ ___For all use cases below, the **System** is `Happenings@NUS` and the **Actor**
 <br>
 
 1. User wishes to change category of notifications - use /changeCat
-2. User wishes to recall last <> event notifications - use /recall <>
-3. User wishes to pause/unpause the bot - /pause /resume
-4. User wishes to terminate the bot - /terminate
-3. User enters invalid commands - bot prompt with list of available commands
+2. User wishes to pause/unpause the bot - /pause /resume
+3. User wishes to terminate the bot - /terminate
+4. User enters invalid commands - bot prompt with list of available commands
 
 
 
