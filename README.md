@@ -51,14 +51,6 @@ ___For all use cases below, the **System** is `Happenings@NUS` and the **Actor**
 
 <br>
 
-**Extensions**
-  
-6a. User chooses one or more types of emails choice
-
-> 6a1. User wishes to change category of notifications - use /changeCat
-
-<br>
-
 ### 3.2 Use Case 2: Changing Categories
 
 1. User has already initialised Happenings@NUS bot
