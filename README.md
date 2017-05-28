@@ -49,36 +49,50 @@ ___For all use cases below, the **System** is `Happenings@NUS` and the **Actor**
 6. User chooses one or more types of emails choice
 7. Use case ends
 
+**Extensions**
+
+1a. User enteres an invalid command
+1b. The bot replies with an error message, followed by a list of correct available commands
+3b. Use case ends
+
 <br>
 
 ### 3.2 Use Case 2: Changing Categories
-
 ---
 
-1. User has already initialised Happenings@NUS bot
-2. User enters /changeCat to change category of notified emails
+**MSS**
+2. User enters /changeCategory
 3. HappeningsBot reply with available choices of categories
-4. User chooses caterogies of event emails .
+4. User chooses caterogies of emails
+5. HappeningsBot shows confirmation message
 3. Use case ends
 
 <br>
 
 ### 3.3 Use Case 3: Invalid Commands
-
 ---
 
+**MSS**
 1. User enteres an invalid command
 2. The bot replies with an error message, followed by a list of available commands
 3. Use case ends
 
 <br>
 
-### 3.4 Use Case 4: Hibernating/resume the bot
-
+### 3.4 Use Case 4: Hibernating the Bot
 ---
- 
-1. User enters /hibernate to stop notifications from Happenings@NUS bot
-2. User enters /resume to resume functions of the bot
+
+**MSS**
+1. User enters /hibernate
+2. HappeningsBot shows confirmation message of hibernation
+3. Use case ends
+
+### 3.5 Use Case 4: Resuming the Bot
+---
+
+**MSS**
+1. User enters /resume
+2. HappeningsBot shows confirmation message of resumation
 3. Use case ends
 
 
