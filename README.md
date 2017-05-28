@@ -53,6 +53,8 @@ ___For all use cases below, the **System** is `Happenings@NUS` and the **Actor**
 
 ### 3.2 Use Case 2: Changing Categories
 
+---
+
 1. User has already initialised Happenings@NUS bot
 2. User enters /changeCat to change category of notified emails
 3. HappeningsBot reply with available choices of categories
@@ -63,6 +65,8 @@ ___For all use cases below, the **System** is `Happenings@NUS` and the **Actor**
 
 ### 3.3 Use Case 3: Invalid Commands
 
+---
+
 1. User enteres an invalid command
 2. The bot replies with an error message, followed by a list of available commands
 3. Use case ends
@@ -70,6 +74,8 @@ ___For all use cases below, the **System** is `Happenings@NUS` and the **Actor**
 <br>
 
 ### 3.4 Use Case 4: Hibernating/resume the bot
+
+---
  
 1. User enters /hibernate to stop notifications from Happenings@NUS bot
 2. User enters /resume to resume functions of the bot
