@@ -184,15 +184,18 @@ class MessageCounter(telepot.helper.ChatHandler):
         # Start of main method
 
         if self._count == 1:
-            self.sender.sendMessage("Where would you like to eat in Singapore?")
+            self.sender.sendMessage("Hello! Welcome to Happenings@NUS. I'm a bot that summarises your NUS emails")
+            self.sender.sendMessage("Please reply with a message in the following format: <NUS email>/<Email Password> to log in.")
+            self.sender.sendMessage("Feel free to use the '/help' message if you have any queries.")
 
             self._count += 1
             return
 
 
         elif self._count == 2:
-
-            self.location = msg['text']
+            self.sender.sendMessage("Email verified! Now, please choose a category of emails you want us to summarise for you: \n 1. Internships \n 2. Events \n 3. Workshops \n 4. Recruitments")
+            self.sender.sendMessage("(For example, if you want to be notified of only internships and events, please enter '1 2'. ")
+            '''self.location = msg['text']
             if self.location.isdigit():
                 self.sender.sendMessage("Sorry, please enter a valid location\nPlease try again")
                 return
@@ -208,13 +211,17 @@ class MessageCounter(telepot.helper.ChatHandler):
  *5* - Food Courts\n *6* - Halal\n *7* - Desserts\n *8* - Takeaway and Fast Food\n \
 /changelocation to set a different location\nEnter a *number* please"
             self.sender.sendMessage(message, parse_mode='Markdown')
-
+            '''
             self._count += 1
             return
 
 
         elif self._count == 3:
-
+            self.sender.sendMessage("Alright, we are all set! Do you want the bot to start notifying emails right now or backtrack emails from yesterday?")
+            self.sender.sendMessage("Enter /now or /backtrack")
+            self._count += 1
+            return
+            '''
             try:
                 self.category = int(msg['text'])
             except ValueError:
@@ -245,7 +252,13 @@ class MessageCounter(telepot.helper.ChatHandler):
             self.url_lst = []
 
             self.sender.sendMessage("/changelocation to set a different location \n/changecategory to change category")
-
+            '''
+        elif self._count == 4:
+            self.sender.sendMessage("Let's Begin!")
+            self.sender.sendMessage("INTERNSHIP - Received on 27/05/2017 15:03: \n Internship opportunities from SMRT, Ohmyhome, OCBC Bank \n Click here to access this email.")
+            self.sender.sendMessage("INTERNSHIP - Received on 27/05/2017 14:12: \n Internship opportunities from HP, WorksApplication \n Click here to access this email.")
+            self.sender.sendMessage("EVENT - Received on 28/05/2017 09:22: \n Talk by Google Software Developer at The Hangar. 17/06/2017 15:00 - 14:30. \n Click here to access this email.")
+            self.sender.sendMessage("WORKSHOP - Received on 28/05/2017 11:55: \n Excel Workshop by NUS CBLC at LT27. 22/06/2017 09:00 - 12:00. Cost: $5. \n Click here to access this email.")
 TOKEN = "398900728:AAEYokXaTW8RgArSG44VqLt_b4wqFu1sFTI"
  
 bot = telepot.DelegatorBot(TOKEN, [
